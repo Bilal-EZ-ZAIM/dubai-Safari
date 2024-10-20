@@ -1,0 +1,180 @@
+.divSemor{
+    background-color: #f4f4f4;
+    min-height: 120vh;
+    padding-top: 20px;
+}
+.divSemor .onepa{
+    color: #666;
+    font-weight: bold;
+}
+.divSemor .semorBtn{
+    background-color: #000036;
+    padding: 6px;
+    width: 140px;
+    border-radius: 5px;
+    font-size: 18px;
+    margin:10px 0;
+}
+.divSemor .semorH1{
+    color:#01014b ;
+}
+.divSemor .divn{
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    width: 480px;
+    margin: 10px 0;
+}
+.divSemor .divn .semorH3{
+    font-weight: 500;
+}
+.divSemor img{
+    width: 450px;
+    height: auto;
+    margin-bottom: 40px;
+}
+.divSemor .rating i {
+    color: rgb(253, 253, 4);
+    font-size: 18px;
+}
+.divSemor .imgTor{
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+.divSemor .toRigth{
+    height: 250px;
+    width: 450px;
+    box-shadow:  0 0 2px 2px #666;
+}
+@media (min-width:230px) {
+    .divSemor img{
+        width: 100%;
+    }
+    .divSemor .toRigth{
+        width: 100%;
+        height: auto;
+    }
+    .divSemor .divn{
+        width: 100%;
+    }
+}
+@media (max-width:500px) {
+    .divSemor .semorH1{
+        font-size: 18px;
+    }
+    .divSemor .divn .semorH3{
+        font-size: 15px;
+        font-weight: bold;
+    }
+}
+.divSemor .toRigth h3{
+    background-color: rgb(253, 212, 224);
+    padding: 8px;
+    color: rgb(255, 104, 50);
+    direction: rtl;
+    font-size: 20px;
+    font-weight: 500;
+}
+.divSemor .toRigth .pading{
+    padding: 15px;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.divSemor .toRigth .pading h4{
+    padding: 5px;
+    background-color: rgb(190, 255, 241);
+    width: auto;
+    border-radius: 7px;
+    width: 220px;
+    color: rgb(19, 151, 153);
+}
+.divSemor .toRigth .pading .price{
+    display: flex;
+    margin-top: 20px;
+    flex-wrap: wrap;
+}
+.divSemor .toRigth .pading .price .pri h2{
+    color: rgb(255, 34, 18);
+    font-size: 20px;
+}
+.divSemor .toRigth .pading .price .pri p{
+    font-weight: 500;
+}
+.divSemor .toRigth .pading .price button{
+    background-color: blue;
+    width: 200px;
+    font-size: 20px;
+    font-weight: bold;
+    border-radius: 50px;
+    margin-left: 20px;
+}
+.divSemor .toRigth .pading .final{
+    margin-top: 25px;
+}
+.divSemor .toRigth .pading .final p i{
+    font-size: 28px;
+    color: rgb(3, 146, 3);
+}
+.divSemor .toRigth .pading .final p {
+    color: #666;
+    font-weight: 500;
+}
+.vbb{
+    width: 100%;
+    height: auto;
+}
+.vbb .p{
+    padding: 30px 0;
+    font-size: 18px;
+    color: #01012b;
+    font-weight: bold;
+    text-align: center;
+}
+.divSemor .ftr{
+    margin: 40px 0;
+}
+.divSemor .ftr div p{
+    margin-left: 30px;
+    font-size: 18px;
+    color: #666;
+    font-weight: 500;
+    margin-bottom: 20px;
+}
+.divSemor .ftr .icon{
+    display: flex;
+    align-items: center;
+    font-weight: normal;
+    margin-bottom: 5px;
+}
+.divSemor .ftr .icon i{
+    font-size: 22px;
+    margin-right: 10px;
+}
+@media (max-width:400px) {
+    .vbb .p{ 
+        font-size: 16px;
+
+    }
+    .divSemor .ftr div p{
+         font-size: 16px;
+    }
+    .divSemor .ftr h2{
+        font-size: 18px;
+    }
+    .vbb h1{ 
+        font-size: 20px;
+    }
+    .divSemor .toRigth .pading .price button{
+        font-size: 16px;
+        height: 40px;
+        width: 150px;
+    }
+}
+.vbb h1{
+    color: orangered;
+}

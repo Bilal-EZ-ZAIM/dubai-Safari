@@ -1,0 +1,247 @@
+/* all */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root{
+    --oneClor : #fff;
+    --towColor :navy;
+    --treColor : blue;
+    --fonColor : #ff3c00;
+    --fontColor-g : #333;
+    --bg-clor : #cecece;
+}
+ul{
+    list-style: none;
+}
+a{
+    text-decoration: none;
+
+}
+input{
+    outline: none;
+    border: none;
+}
+button{
+    outline: none;
+    border: none;
+    cursor: pointer;
+    color: var(--oneClor);
+}
+.contenre{
+    margin: 0 auto;
+    
+}
+@media (max-width:768px) {
+    .contenre{
+        width:100%;
+        padding: 0 5px;
+    }
+}
+@media (min-width:768px) {
+    .contenre{
+        width:750px;
+    }
+}
+/*mediam*/
+@media (min-width:992px) {
+    .contenre{
+        width:970px ;
+    }
+}
+/*larg*/
+@media (min-width:1200px) {
+    .contenre{
+        width:1000px ;
+    }
+}
+/* end all */
+.header{
+    width: 100%;
+    background-color: var(--oneClor);
+    position: sticky;
+    top: 0;
+    z-index: 222;
+    
+}
+.header .contenre{
+    display: flex;
+    
+    position: relative;
+    height: 100%;
+    justify-content: space-between;
+    align-items: center;
+    
+}
+.header .contenre .logo{
+    display: flex;
+    align-items: center;
+    color: var(--fonColor);
+}
+.header .contenre .logo img{
+    width: 65px;
+}
+.header .contenre .nav ul{
+    display: flex;
+    width: 400px;
+    justify-content: space-between;
+    font-size: 18px;
+    margin-right: 10px;
+}
+.header .contenre .nav ul a{
+    cursor: pointer;
+    transition: linear 0.2s;
+}
+.header .contenre  ul li a i{
+    margin-right: 5px;
+}
+.header .contenre  ul a:hover{
+    color: var(--fonColor);
+    
+}
+.header .contenre .clos{
+    display: none;
+}
+.header .contenre  ul li .active{
+    color: #ff3c00;
+}
+
+/*respons*/
+@media (max-width:600px) {
+    .header .contenre .nav{
+        display: none;
+    }
+    .header .contenre .block{
+        position: absolute;
+        width: 150px;
+        top: 100%;
+        left: 20px;
+        display: flex;
+        flex-direction: column;
+        line-height: 2;
+        height: 150px;
+        z-index: 5555;
+        overflow: hidden;
+        display: block;
+        transition: linear 1s;
+        background-color: var(--oneClor);
+    }
+    .header .contenre .block ul li {
+        font-size: 18px;
+        cursor: pointer;
+        margin-left: 5px;
+    }
+    
+    .header .contenre .clos{
+        display: block;
+        margin-right: 20px;
+        font-size: 40px;
+        cursor: pointer;
+    }
+}
+/* landing*/
+.landing{
+    background-image: url(../images/dubaiiii.jpg);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    width: 100%;
+    height:calc(100vh - 11.5vh);
+    position: relative;
+    padding: 30px;
+}
+
+.landing  .search{
+    background-color: var(--oneClor);
+    border-radius: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px;
+    height: 50px;
+}
+.landing  .search .iconsearch{
+    display: flex;
+    width: 80%;
+    align-items: center;
+}
+.landing  .search .iconsearch i{
+    font-size: 24px;
+    margin-right: 10px;
+    cursor: pointer;
+}
+.landing .search input{
+    width: 100%;
+    height: 30px;
+    font-size: 22px;
+    color: #444;
+    padding: 10px;
+    background-color: transparent;
+}
+.landing  .search button{
+    background-color: blue;
+    padding: 8px 15px;
+    font-size: 18px;
+    border-radius: 50px;
+}
+.landing .text{
+    position: absolute;
+    bottom: 20vh;
+    left: 50%;
+    transform: translateX(-50%);
+    font-size: 38px;
+    font-weight: bold;
+    color: var(--oneClor);
+}
+.landing .text p{
+    font-size: 64px;
+}
+@media (max-width:450px) {
+    .landing .text{
+        text-align: center;
+    }
+    .landing .text h3{
+        font-size: 28px;
+    }
+    .landing .text p{
+        font-size: 34px;
+    }
+}
+/*butons*/
+.butons{
+    width: 100%;
+    height: auto;
+    display: flex;
+    align-items: center;
+}
+.butons .contenre{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    padding: 20px 0;
+    padding: 20px;
+}
+.butons .contenre button{
+    background-color: transparent;
+    color: #111;
+    font-weight: 600;
+    font-size: 16px;
+    border: 1px solid #444;
+    width: 160px;
+    height: 40px;
+    text-align: center;
+    margin-bottom: 10px;
+    border-radius: 50px;
+}
+.butons .contenre button i{
+    margin-right: 5px;
+}
+@media (max-width:400px) {
+    .butons .contenre{
+        flex-direction: column;
+        justify-content: center;
+    }
+}

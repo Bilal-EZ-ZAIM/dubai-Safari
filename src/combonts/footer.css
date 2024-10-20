@@ -1,0 +1,90 @@
+footer{
+    background-color: rgb(20, 20, 97);
+    width: 100%;
+    display: flex;
+    color: #fff;
+    justify-content: space-between;
+    padding: 60px;
+    height: auto;
+}
+footer .tot h3:first-child{
+    margin-bottom: 15px;
+}
+footer .tot{
+    line-height: 1.7;
+}
+footer .tot h3{
+    font-weight: 500;
+}
+footer .divtree .icon{
+    display: flex;
+    margin-top: 10px;
+    justify-content: space-between;
+}
+footer .divtree .icon i{
+    font-size: 28px;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    width: 40px;
+    height: 40px;
+    background-color: #fff;
+    border-radius: 50%;
+}
+footer .divtree .icon i:first-child{
+    color: rgb(61, 61, 250);
+}
+footer .divtree .icon i:nth-child(2){
+    color: rgb(255, 2, 179);
+}
+footer .divtree .icon i:nth-child(3){
+    color: rgb(141, 171, 253);
+}
+footer .divtree .icon i:last-child{
+    color: rgb(24, 39, 253);
+}
+@media (max-width:650px) {
+    footer{
+        padding: 15px;
+    }
+    footer .tot h3{
+        font-size: 16px;
+    }
+}
+@media (max-width:650px) {
+    footer{
+        padding: 15px;
+    }
+    footer .tot h3{
+        font-size: 16px;
+    }
+}
+@media (max-width:860px) {
+    footer{
+        flex-direction: column;
+        align-items: center;
+        padding: 15px;
+        height: auto;
+    }
+    footer .tot{
+        width: 200px;
+    }
+    footer .tot h3{
+        font-size: 16px;
+    }
+    footer .divtree .icon i{
+        font-size: 18px;
+        width: 30px;
+        height: 30px;
+    }
+}
+footer select{
+    padding: 10px;
+    width: 180px;
+    font-size: 17px;
+    border-radius: 5px;
+    outline: none;
+    margin-top: 10px;
+    margin-bottom: 15px;
+}
+

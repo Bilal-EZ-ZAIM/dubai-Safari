@@ -1,0 +1,147 @@
+
+.banar{
+    width: 90%;
+    margin: 40px auto;
+    height: 30vh;
+    background-image: url(../images/skyscrepper.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    border-radius: 10px;
+    position: relative;
+    z-index: -2;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.banar::before{
+    content: "";
+    position: absolute;
+    background-color: rgb(0, 0, 0,0.5);
+    width: 100%;
+    height: 100%;
+    border-radius: 10px;
+    z-index: -1;
+}
+.banar .parg-banary{
+    color: #fff;
+    font-size: 40px;
+    font-weight: bold;
+}
+@media (max-width:700px) {
+    .banar .parg-banary{
+        font-size: 30px;
+    }
+    
+}
+@media (max-width:499px) {
+    .banar{
+        height: 20vh;
+    }
+    .banar .parg-banary{
+        font-size: 20px;
+    }
+    
+}
+@media (max-width:339px) {
+    .banar{
+        height: 18vh;
+    }
+    .banar .parg-banary{
+        font-size: 16px;
+        text-align: center;
+    }
+}
+/* sigup */
+.sigup{
+    height:60vh;
+    width: 90%;
+    margin: 30px auto;
+    background-color: rgb(186, 255, 232);
+    display: flex;
+}
+
+.sigup .from{
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    padding: 10px;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+}
+.sigup .from p{
+    margin: 10px 0;
+    color: #222;
+}
+.sigup .from input{
+    width: 100%;
+    padding: 15px;
+    border: 2px solid #555;
+    font-size: 18px;
+    border-radius: 5px;
+    margin-bottom: 10px;
+}
+.sigup .from button{
+    color: #fff;
+    font-size: 18px;
+    background-color: blue;
+    border-radius: 50px;
+    padding: 12px 20px;
+}
+.sigup .contenreimg{
+    width: 50%;
+    height: 100%;
+}
+.sigup .contenreimg img{
+    width: 100%;
+    height: 100%;
+}
+@media (max-width:800px) {
+    .sigup{
+        height: 40vh;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .sigup .from{
+        width: 100%;
+    }
+    .sigup .contenreimg{
+        display: none;
+    }
+
+    
+}
+@media (max-width:800px) {
+    .sigup .from h1{
+        font-size: 22px;
+    }
+}
+@media (max-width:425px) {
+    .sigup .from h1{
+        font-size: 18px;
+    }
+    .sigup .from p{
+        font-size: 14px;
+    }
+}
+@media (max-width:335px) {
+    .sigup .from{
+        
+        padding: 10px 4px;
+    }
+    .sigup .from h1{
+        font-size: 16px;
+    }
+    .sigup .from p{
+        font-size: 12px;
+    }
+    .sigup .from input{
+        font-size: 14px;
+        padding: 6px;
+    }
+    .sigup .from button{
+        font-size: 16px;
+        padding: 8px 16px;
+    }
+}

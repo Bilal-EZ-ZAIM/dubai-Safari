@@ -1,0 +1,208 @@
+:root {
+    --oneClor: #fff;
+    --towColor: navy;
+    --treColor: blue;
+    --fonColor: #ff3c00;
+    --fontColor-g: #333;
+    --bg-clor: #cecece;
+}
+
+.cartSafari {
+    width: 100%;
+    height: auto;
+    padding: 20px 0;
+}
+
+.cartSafari .contenre {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    grid-gap: 35px;
+}
+
+.cartSafari .contenre .compontcart {
+    height: auto;
+    background-color: var(--oneClor);
+    display: flex;
+    flex-direction: column;
+    border-radius: 6px;
+    position: relative;
+    padding-bottom: 10px;
+
+}
+
+.cartSafari .contenre .compontcart .img {
+    height: 50%;
+}
+
+.cartSafari .contenre .compontcart .adv {
+    background-color: rgb(0, 0, 54);
+    padding: 8px;
+    width: 100px;
+    position: absolute;
+    left: 10px;
+    top: 48.9%;
+    transform: translateY(-50%);
+    border-radius: 5px;
+}
+
+.cartSafari .contenre .compontcart:hover {
+    box-shadow: 0 0 1px 1px #444;
+}
+
+.cartSafari .contenre .compontcart .contentCart {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 50%;
+    padding-left: 10px;
+    padding-right: 10px;
+    padding-top: 30px;
+    line-height: 2;
+}
+
+.cartSafari .contenre .compontcart .contentCart .div {
+    height: 50px;
+    line-height: 1.2;
+    color: #333;
+}
+
+.cartSafari .contenre .compontcart .contentCart .para p {
+    color: #555;
+    font-size: 15px;
+}
+
+.cartSafari .contenre .compontcart .div h3 {
+    color: #070000;
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.cartSafari .contenre .compontcart .img img {
+    width: 100%;
+    border-radius: 6px 6px 0 0;
+    height: 100%;
+}
+
+.cartSafari .contenre .compontcart .contentCart .price {
+    display: flex;
+    align-items: center;
+}
+
+.cartSafari .contenre .compontcart .contentCart .price h4 {
+    color: var(--fonColor);
+    font-weight: bold;
+    font-size: 18px;
+}
+
+.cartSafari .contenre .compontcart .contentCart .price span {
+    margin-left: 3px;
+    color: #555;
+}
+
+.cartSafari .contenre .compontcart .contentCart .butnCart .button {
+    width: 100%;
+    text-align: center;
+    display: block;
+    background-color: var(--treColor);
+    font-size: 16px;
+    color: #fff;
+    border-radius: 5px;
+}
+
+.rating i {
+    color: rgb(253, 253, 4);
+}
+
+.rating .spanone {
+    margin: 0 10px;
+}
+
+@media (max-width:600px) {
+    .cartSafari .contenre {
+        display: flex;
+        flex-direction: column;
+    }
+    .cartSafari .contenre .compontcart {
+        width: 90%;
+        margin: 0 auto;
+    }
+}
+
+/*pagintion*/
+.pagintion {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    margin: 30px 0;
+}
+.pagintion .spanpaginition{
+    padding: 8px 14px ;
+    font-size: 18px;
+    font-weight: bold;
+    border: 1px solid #777;
+    cursor: pointer;
+}
+.pagintion .spanpaginition:hover{
+    background-color: #999;
+}
+.pagintion .active{
+    background-color: #999;
+}
+.pagintion button{
+    color: #000;
+    font-size: 18px;
+    padding: 1px 8px;
+    background-color: #cecece;
+    border: 1px solid #777;
+}
+.pagintion .previous{
+    border-radius: 8px 0 0 8px;
+}
+.pagintion .next{
+    border-radius: 0 8px  8px 0;
+}
+.pagintion button:disabled{
+    cursor: not-allowed;
+}
+@media (max-width:499px) {
+    .pagintion .spanpaginition{
+        font-size: 14px;
+        padding: 4px 8px ;
+    }
+    .pagintion button{
+        padding: 1px 4px;
+        font-size: 14px;
+    }
+    .pagintion .previous{
+        border-radius: 4px 0 0 4px;
+    }
+    .pagintion .next{
+        border-radius: 0 4px  4px 0;
+    }
+    
+}
+/*sorting*/
+.sorting .contenre{
+    display: flex;
+    height: 10vh;
+    align-items: center;
+    justify-content: space-between;
+}
+.sorting .contenre h3{
+    color: #777;
+}
+.sorting .contenre select{
+    border: none;
+    font-size: 18px;
+    padding: 10px;
+    outline: none;
+}
+.sorting .contenre select option{
+    outline: none;
+}
+@media (max-width:499px) {
+    .sorting .contenre{
+        flex-direction: column;
+    }
+    
+}
